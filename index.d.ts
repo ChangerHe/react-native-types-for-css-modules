@@ -532,6 +532,8 @@ export interface PressableProps extends AccessibilityProps, Omit<ViewProps, 'sty
      */
     style?: StyleProp<ViewStyle> | ((state: PressableStateCallbackType) => StyleProp<ViewStyle>) | undefined;
 
+    styleName?: string;
+
     className?: string;
 }
 
@@ -1055,6 +1057,8 @@ export interface TextProps extends TextPropsIOS, TextPropsAndroid, Accessibility
      * @see https://reactnative.dev/docs/text#style
      */
     style?: StyleProp<TextStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -1683,6 +1687,8 @@ export interface TextInputProps extends ViewProps, TextInputIOSProps, TextInputA
      * Styles
      */
     style?: StyleProp<TextStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -2520,6 +2526,8 @@ export interface ViewProps
 
     style?: StyleProp<ViewStyle> | undefined;
 
+    styleName?: string;
+
     className?: string;
 
     /**
@@ -2748,6 +2756,8 @@ export interface InputAccessoryViewProps {
 
     style?: StyleProp<ViewStyle> | undefined;
 
+    styleName?: string;
+
     className?: string;
 }
 
@@ -2843,6 +2853,8 @@ export interface NavigatorIOSProps {
      */
     style?: StyleProp<ViewStyle> | undefined;
 
+    styleName?: string;
+
     className?: string;
 }
 
@@ -2930,6 +2942,8 @@ export interface ActivityIndicatorProps extends ViewProps {
 
     style?: StyleProp<ViewStyle> | undefined;
 
+    styleName?: string;
+
     className?: string;
 }
 
@@ -2970,6 +2984,8 @@ export interface ActivityIndicatorIOSProps extends ViewProps {
     size?: 'small' | 'large' | undefined;
 
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 }
@@ -3241,6 +3257,8 @@ export interface PickerProps extends PickerPropsIOS, PickerPropsAndroid {
     selectedValue?: string | undefined;
 
     style?: StyleProp<TextStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -3594,6 +3612,8 @@ export interface SliderProps extends SliderPropsIOS, SliderPropsAndroid {
      * Used to style and layout the Slider. See StyleSheet.js and ViewStylePropTypes.js for more info.
      */
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -4040,6 +4060,8 @@ export interface ImageProps extends ImagePropsBase {
      */
     style?: StyleProp<ImageStyle> | undefined;
 
+    styleName?: string;
+
     className?: string;
 }
 
@@ -4066,6 +4088,8 @@ export class Image extends ImageBase {
 export interface ImageBackgroundProps extends ImagePropsBase {
     imageStyle?: StyleProp<ImageStyle> | undefined;
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
     imageRef?(image: Image): void;
@@ -5263,6 +5287,8 @@ export interface TouchableWithoutFeedbackProps
      */
     style?: StyleProp<ViewStyle> | undefined;
 
+    styleName?: string;
+
     className?: string;
 
     /**
@@ -5318,6 +5344,8 @@ export interface TouchableHighlightProps extends TouchableWithoutFeedbackProps {
      * @see https://reactnative.dev/docs/view#style
      */
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -5861,6 +5889,8 @@ export interface TabBarIOSItemProps extends ViewProps {
      * React style object.
      */
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -6857,6 +6887,8 @@ export interface ScrollViewProps extends ViewProps, ScrollViewPropsIOS, ScrollVi
      * Style
      */
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 
@@ -8662,6 +8694,8 @@ export interface SwitchProps extends SwitchPropsIOS {
     ios_backgroundColor?: ColorValue | undefined;
 
     style?: StyleProp<ViewStyle> | undefined;
+
+    styleName?: string;
 
     className?: string;
 }
